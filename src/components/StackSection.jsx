@@ -65,10 +65,10 @@ export default function StackSection() {
                                 whileHover={{ scale: 1.03 }}
                                 className="group card-surface-hover rounded-2xl p-5 sm:p-6 flex flex-col items-center gap-3 cursor-default">
 
-                                <span className="text-3xl sm:text-4xl grayscale group-hover:grayscale-0 transition-all duration-300">
+                                <span className="text-3xl sm:text-4xl  group-hover:scale-95 transition-all duration-300">
                                     {tech.icon}
                                 </span>
-                                <span className="text-xs sm:text-sm font-medium text-gray-500 group-hover:text-foreground transition-colors duration-300">
+                                <span className="text-xs sm:text-sm font-medium text-gray-500 transition-colors duration-300">
                                     {tech.name}
                                 </span>
                             </motion.article>

@@ -117,7 +117,7 @@ export default function Project() {
                         Projetos
                     </span>
                     <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-gray-100">
-                        Trabalhos selecionados
+                        Projectos selecionados
                     </h2>
                 </motion.div>
                 <section>

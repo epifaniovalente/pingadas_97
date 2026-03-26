@@ -1,10 +1,17 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa"
+import { FaBriefcase, FaFacebook, FaGraduationCap, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaLocationDot } from "react-icons/fa6"
 import profile_foto from "../images/profile_round.png";
+import SocialMidia from "./SocialMidia";
 
 const ease = [0.2, 0, 0, 1]
+
+const midiaSocial = [
+    {href: "#", icon: <FaFacebook/>},
+
+    {href:"#", icon: <FaInstagram/>}
+]
 
 const experience = [
     {
@@ -81,6 +88,10 @@ function AboutSection() {
                             <div className="flex items-center justify-center lg:justify-start gap-1.5 text-gray-600">
                                 <FaLocationDot className="w-3.5 h-3.5" />
                                 <span className="text-xs">Luanda, Angola</span>
+                            </div>
+                            <div className="text-center">
+                                <SocialMidia/>
+                                
                             </div>
                         </article>
 
