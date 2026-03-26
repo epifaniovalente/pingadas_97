@@ -1,7 +1,6 @@
 import { motion, inView, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import byteShop from "../images/byteShop.png"
 
 const ease = [0.2, 0, 0, 1];
 
@@ -11,14 +10,14 @@ const projectos = [
         descricao: "Sistema web desenvolvido como projeto acadêmico que permite estudantes realizarem denúncias de forma anônima dentro do ambiente escolar, garantindo privacidade e segurança das informações.",
         techs: ["HTML", "CSS", "JavaScript","PHP","MySQL"],
         ano: "2025",
-        image: ""
+        image: "#"
     },
     {
         titulo: "ByteShop – Loja Virtual",
         descricao: "Interface de uma loja virtual desenvolvida para praticar construção de layouts modernos, organização de produtos e experiência do usuário.",
         techs: ["HTML", "TailwindCSS", "JavaScript"],
         ano: "2024",
-        image: {byteShop}
+        image: "#"
     },
     {
         titulo: "Simulação de Redes",
