@@ -1,29 +1,37 @@
 import { motion, inView, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import byteShop from "../images/byteShop.png"
 
 const ease = [0.2, 0, 0, 1];
 
 const projectos = [
     {
-        titulo: "Gest BI Angola",
-        descricao: "Este é um projecto muito inovador na area de agendamentos",
-        techs: ["HTML", "CSS", "JS"],
-        ano: "2019",
+        titulo: "Voz Segura - Plataforma de Denúncia Anônima",
+        descricao: "Sistema web desenvolvido como projeto acadêmico que permite estudantes realizarem denúncias de forma anônima dentro do ambiente escolar, garantindo privacidade e segurança das informações.",
+        techs: ["HTML", "CSS", "JavaScript","PHP","MySQL"],
+        ano: "2025",
+        image: ""
+    },
+    {
+        titulo: "ByteShop – Loja Virtual",
+        descricao: "Interface de uma loja virtual desenvolvida para praticar construção de layouts modernos, organização de produtos e experiência do usuário.",
+        techs: ["HTML", "TailwindCSS", "JavaScript"],
+        ano: "2024",
+        image: {byteShop}
+    },
+    {
+        titulo: "Simulação de Redes",
+        descricao: "Projeto acadêmico de configuração e simulação de redes locais utilizando ferramentas de laboratório virtual.",
+        techs: ["Cisco Packet Tracer", " Redes TCP/IP"],
+        ano: "2024/25",
         image: "#"
     },
     {
-        titulo: "Safe Voice",
-        descricao: "Este é um projecto Para combater o bullying na schoolera",
-        techs: ["HTML", "CSS", "JS"],
-        ano: "2019",
-        image: "#"
-    },
-    {
-        titulo: "Byte Shop",
-        descricao: "Este é um projecto Para dinamizar a compra de materiais escolares",
-        techs: ["HTML", "Tailwind", "JS"],
-        ano: "2019",
+        titulo: "Oficina AutoStar - Projeto para uma Mecânica",
+        descricao: "Projeto técnico relacionado à área de mecânica, desenvolvido para demonstrar compreensão de sistemas mecânicos e aplicação prática de conceitos técnicos.",
+        techs: ["React", "Tailwind"],
+        ano: "2024/25",
         image: "#"
     }
 ]
@@ -32,7 +40,7 @@ function ProjectCard({ projectos }) {
     return (
         <main >
             <section className="relative overflow-hidden rounded-xl bg-background">
-
+                
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
                     {
                         projectos.map((projecto) => (
@@ -49,7 +57,7 @@ function ProjectCard({ projectos }) {
                                         alt={`Screenshot do projeto ${projecto.titulo}`}
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                         loading="lazy"
-                                    />                                   
+                                    />
                                 </article>
 
                                 <article className="p-5 sm:p-6">
@@ -113,7 +121,6 @@ export default function Project() {
                         Trabalhos selecionados
                     </h2>
                 </motion.div>
-
                 <section>
                     <ProjectCard projectos={projectos} />
                 </section>

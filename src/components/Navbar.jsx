@@ -32,7 +32,7 @@ export function Navbar() {
                 ))}
                 </div>
 
-                <button type="button"onClick={(e)=> setMenuOpen(!menuOpen)} className="sm:hidden p-1.5 rounded-lg">
+                <button type="button" onClick={(e)=> setMenuOpen(!menuOpen)} className="sm:hidden p-1.5 rounded-lg">
                     {menuOpen ? <span className="h-5 w-5">X</span> :<FaBars/>}
                 </button>
 
@@ -44,7 +44,7 @@ export function Navbar() {
                 className="sm:hidden max-w-5xl rounded-2xl bg-slate-950 text-blue-400 backdrop-blur-xl ring-1 p-4 flex flex-col gap-3 absolute right-0 left-0 top-16"
                 >
                     {links.map((link)=>(
-                        <a href={link.href} key={link.href}>
+                        <a href={link.href} key={link.href} onClick={(e) => {menuOpen && setMenuOpen(!menuOpen)}}>
                             {link.label}
                         </a>
                     ))}

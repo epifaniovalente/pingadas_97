@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheck, FaCheckCircle, FaPaperPlane, FaSpinner } from "react-icons/fa";
 import { FaCircleArrowRight, FaMailchimp } from "react-icons/fa6";
 
 const ease = [0.2, 0, 0, 1];
@@ -15,17 +15,36 @@ export default function Contacto() {
     const [erros, setErros] = useState({});
     const [enviando, setEnviando] = useState(false);
     const [enviado, setEnviado] = useState(false);
+    const [sucesso, setSucesso] = useState("");
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         let erro = {};
 
-        if (name.trim) {
+
+        if (name.length < 6) {
             erro.name = "Nome é obrigatório!"
+            setSucesso("")
+        }
+        if (email.length < 12) {
+            erro.email = "Email invalido"
+            setSucesso("")
+        }
+        if (menssagem.length < 12) {
+            erro.menssagem = "Mensagem é obrigatória"
+            setSucesso("")
         }
 
         setErros(erro)
 
+
+        if (Object.keys(erro).length === 0) {
+            setName("")
+            setEmail("")
+            setMenssagem("")
+            setSucesso("Menssagem enviada com sucesso, Thanks!")
+        }
 
     }
 
@@ -57,21 +76,21 @@ export default function Contacto() {
                     transition={{ duration: 0.6, delay: 0.15, ease }}
                     className=" rounded-2xl p-6 sm:p-8 space-y-5 mb-8"
                 >
+                    <p className="text-green-500 text-center text-sm">
+                        {
+                            sucesso &&
+                            <>{sucesso}</>
+                        }
+                    </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div className="space-y-1.5">
                             <label htmlFor="name" className="text-xs font-medium text-gray-100 uppercase tracking-wider">
                                 Nome
                             </label>
-                            <input
-                                id="name"
-                                name="name"
-                                type="text"
-                                value={name}
+                            <input id="name" name="name" type="text" value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                maxLength={100}
-                                placeholder="O teu nome"
-                                className={`w-full px-4 py-3 bg-slate-950/50 rounded-xl bg-background ring-1 text-sm text-gray-100 placeholder:text-gray-600/50 outline-none transition-all duration-300 ease-in-out focus:ring-blue-400/90 ${erros.name ? "ring-red-500/70" : "ring-gray-700/50"
-                                    }`}
+                                maxLength={100} placeholder="O teu nome"
+                                className={`w-full px-4 py-3 bg-slate-950/50 rounded-xl bg-background ring-1 text-sm text-gray-100 placeholder:text-gray-600/50 outline-none transition-all duration-300 ease-in-out focus:ring-blue-400/90 ${erros.name ? "ring-red-500/70" : "ring-gray-700/50"}`}
                             />
                             {erros.name && <p className="text-xs text-red-500">{erros.name}</p>}
                         </div>
@@ -80,16 +99,10 @@ export default function Contacto() {
                             <label htmlFor="email" className="text-xs font-medium text-gray-100 uppercase tracking-wider">
                                 Email
                             </label>
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                value={email}
+                            <input id="email" name="email" type="email" value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                maxLength={255}
-                                placeholder="email@exemplo.com"
-                                className={`w-full px-4 py-3 bg-slate-950/50 rounded-xl bg-background ring-1 text-sm text-gray-100 placeholder:text-gray-600/50 outline-none transition-all duration-300 ease-in-out focus:ring-blue-400/90 ${erros.email ? "ring-red-500/70" : "ring-gray-700/50"
-                                    }`}
+                                maxLength={255} placeholder="email@exemplo.com"
+                                className={`w-full px-4 py-3 bg-slate-950/50 rounded-xl bg-background ring-1 text-sm text-gray-100 placeholder:text-gray-600/50 outline-none transition-all duration-300 ease-in-out focus:ring-blue-400/90 ${erros.email ? "ring-red-500/70" : "ring-gray-700/50"}`}
                             />
                             {erros.email && <p className="text-xs text-red-500">{erros.email}</p>}
                         </div>
@@ -109,7 +122,7 @@ export default function Contacto() {
                             className={`w-full px-4 py-3 bg-slate-950/50 rounded-xl bg-background ring-1 text-sm text-gray-100 placeholder:text-gray-600/50 outline-none transition-all duration-300 ease-in-out focus:ring-blue-400/90 resize-none ${erros.menssagem ? "ring-red-500/70" : "ring-gray-700/50"
                                 }`}
                         />
-                        {erros.menssagem && <p className="text-xs text-destructive">{erros.menssagem}</p>}
+                        {erros.menssagem && <p className="text-xs text-red-500">{erros.menssagem}</p>}
 
                     </div>
 
@@ -119,11 +132,11 @@ export default function Contacto() {
                     >
                         {
                             enviando ? (
-                                <FaCircleArrowRight className="w-4 h-4 animate-spin" />
+                                <FaSpinner className="w-4 h-4 animate-spin" />
                             ) : enviado ? (
-                                <FaCheckCircle className="w-4 h-4" />
+                                <FaCheck className="w-4 h-4" />
                             ) : (
-                                <FaMailchimp className="w-4 h-4" />
+                                <FaPaperPlane className="w-4 h-4" />
                             )
                         }
                         {enviando ? "A enviar..." : enviado ? "Enviado!" : "Enviar Mensagem"}

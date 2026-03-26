@@ -1,4 +1,4 @@
-import { motion, inView, useInView } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa"
 import { FaLocationDot } from "react-icons/fa6"
@@ -8,22 +8,34 @@ const ease = [0.2, 0, 0, 1]
 
 const experience = [
     {
-        role: "Front-end Developer Senior",
-        company: "TechCorp",
-        period: "2023 — Presente",
-        description: "Liderança técnica no desenvolvimento de interfaces complexas com React e TypeScript."
+        role: "Desenvolviento Web Front-end",
+        company: "....",
+        period: "2024 — Presente",
+        description: "Criação de layouts responsivos e interativos focados em boa experiência do usuário."
     },
     {
-        role: "Front-end Developer",
-        company: "DigitalAgency",
-        period: "2021 — 2023",
-        description: "Desenvolvimento de aplicações web responsivas e sistemas de design reutilizáveis.",
+        role: "Versionamento de Código",
+        company: "....",
+        period: "2024 — Presente",
+        description: "Criação e gerenciamento de respositórios para projectos e hospedagem de projectos para portifólio online."
     },
     {
-        role: "Desenvolvedor Web Jr.",
-        company: "StartupXYZ",
-        period: "2019 — 2021",
-        description: "Construção de landing pages e interfaces com HTML, CSS e JavaScript.",
+        role: "Desenvolvimentos de Projectos Acadêmicos/Pessoais",
+        company: "Colégio Jacimira",
+        period: "2023 — 2025",
+        description: "Desenvolvimento de aplicações web como parte das atividades práticas do curso & Planejamento e implementação de um sistema web como TCC.",
+    },
+    {
+        role: "Base de Dados.",
+        company: "Colégio Jacimira",
+        period: "2024 — 2025",
+        description: "Utilização de CRUD completo, estruturação de tabelas e gerenciamento.",
+    },
+    {
+        role: "Redes de Computadores.",
+        company: "Colégio Jacimira",
+        period: "2023 — 2024",
+        description: "Configurações de redes locais, endereçamento IP e sub-redes.",
     },
 ]
 
