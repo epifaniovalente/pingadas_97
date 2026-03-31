@@ -59,7 +59,7 @@ function ProjectCard({ projectos }) {
                                     <img
                                         src={projecto.image}
                                         alt={`Screenshot do projeto ${projecto.titulo}`}
-                                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-105"
+                                        className="w-full h-full object-top transition-transform duration-500 group-hover:scale-105"
                                         loading="lazy"
                                     />
                                 </article>
