@@ -2,7 +2,7 @@ import { motion, inView, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-import image1 from '../assets/images/vozsegura.PNG'
+import vozsegura from '../assets/images/vozsegura.png'
 import image2 from '../assets/images/byteShop.png'
 import image3 from '../assets/images/topologia.png'
 import image4 from '../assets/images/OficinaAutoStar.png'
@@ -15,7 +15,7 @@ const projectos = [
         descricao: "Sistema web desenvolvido como projeto acadêmico que permite estudantes realizarem denúncias de forma anônima dentro do ambiente escolar, garantindo privacidade e segurança das informações.",
         techs: ["HTML", "CSS", "JavaScript","PHP","MySQL"],
         ano: "2025",
-        image: image1
+        image: vozsegura
     },
     {
         titulo: "ByteShop – Loja Virtual",
