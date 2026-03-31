@@ -2,7 +2,7 @@ import { motion, inView, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-import image1 from '../assets/images/VozSegura.png'
+import image1 from '../assets/images/vozsegura.PNG'
 import image2 from '../assets/images/byteShop.png'
 import image3 from '../assets/images/topologia.png'
 import image4 from '../assets/images/OficinaAutoStar.png'
