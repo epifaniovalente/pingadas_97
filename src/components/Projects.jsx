@@ -2,10 +2,10 @@ import { motion, inView, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-import vozsegura from '../assets/images/vozsegura.png'
-import image2 from '../assets/images/byteShop.png'
-import image3 from '../assets/images/topologia.png'
-import image4 from '../assets/images/OficinaAutoStar.png'
+import vozsegura from '../assets/vozsegura.png'
+import image2 from '../assets/byteShop.png'
+import image3 from '../assets/topologia.png'
+import image4 from '../assets/OficinaAutoStar.png'
 
 const ease = [0.2, 0, 0, 1];
 
