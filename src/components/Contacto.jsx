@@ -47,9 +47,9 @@ export default function Contacto() {
         }
 
     }
-
+// 
     return (
-        <section id="contacto" className="py-24 sm:py-32 px-4 sm:px-6 bg-linear-120 from-[#020024] from-0% via-[#090979] via-50% to-[#02778f] to-100%" ref={ref}>
+        <section id="contacto" className="py-24 sm:py-32 px-4 sm:px-6 bg-linear-120 from-[#020024] from-90% via-[#090979] via-50% to-[#02778f] to-10%" ref={ref}>
             <article className="max-w-3xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 16 }}
