@@ -49,7 +49,7 @@ export default function Contacto() {
     }
 
     return (
-        <section id="contacto" className="py-24 sm:py-32 px-4 sm:px-6" ref={ref}>
+        <section id="contacto" className="py-24 sm:py-32 px-4 sm:px-6 bg-linear-120 from-[#020024] from-0% via-[#090979] via-50% to-[#02778f] to-100%" ref={ref}>
             <article className="max-w-3xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 16 }}
@@ -64,7 +64,7 @@ export default function Contacto() {
                         Vamos trabalhar juntos?
                     </h2>
                     <p className="text-gray-500 leading-relaxed text-sm sm:text-base max-w-lg mx-auto">
-                        Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades
+                        Estou sempre disponível a discutir novos projetos, ideias criativas ou oportunidades
                         para fazer parte da sua equipe.
                     </p>
                 </motion.div>

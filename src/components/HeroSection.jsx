@@ -15,7 +15,11 @@ export function HeroSection() {
                     className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full ring-1 ring-foreground/[0.08] bg-card/50 backdrop-blur-sm mb-6 sm:mb-8"
                 >
                     <span className="text-[11px] sm:text-xs font-mono tracking-wide uppercase flex items-center gap-2">
-                        <span className="text-emerald-500 animate-pulse"><FaDotCircle /></span>
+                        <span className="text-emerald-500 animate-pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>
+                        </span>
                         Disponível para projetos
                     </span>
                 </motion.div>
@@ -70,8 +74,8 @@ export function HeroSection() {
                 className="absolute bottom-20 left-1/2 -translate-x-1/2"
             >
                 <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                    animate={{ y: [0, 8, 0] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 >
                     <FaArrowRight className="w-4 h-4 text-muted-foreground rotate-90" />
                 </motion.div>

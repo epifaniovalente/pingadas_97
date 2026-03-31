@@ -2,6 +2,11 @@ import { motion, inView, useInView } from "framer-motion"
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
+import image1 from '../assets/images/VozSegura.png'
+import image2 from '../assets/images/byteShop.png'
+import image3 from '../assets/images/topologia.png'
+import image4 from '../assets/images/OficinaAutoStar.png'
+
 const ease = [0.2, 0, 0, 1];
 
 const projectos = [
@@ -10,28 +15,28 @@ const projectos = [
         descricao: "Sistema web desenvolvido como projeto acadêmico que permite estudantes realizarem denúncias de forma anônima dentro do ambiente escolar, garantindo privacidade e segurança das informações.",
         techs: ["HTML", "CSS", "JavaScript","PHP","MySQL"],
         ano: "2025",
-        image: "#"
+        image: image1
     },
     {
         titulo: "ByteShop – Loja Virtual",
         descricao: "Interface de uma loja virtual desenvolvida para praticar construção de layouts modernos, organização de produtos e experiência do usuário.",
         techs: ["HTML", "TailwindCSS", "JavaScript"],
         ano: "2024",
-        image: "#"
+        image: image2
     },
     {
         titulo: "Simulação de Redes",
         descricao: "Projeto acadêmico de configuração e simulação de redes locais utilizando ferramentas de laboratório virtual.",
         techs: ["Cisco Packet Tracer", " Redes TCP/IP"],
         ano: "2024/25",
-        image: "#"
+        image: image3
     },
     {
         titulo: "Oficina AutoStar - Projeto para uma Mecânica",
         descricao: "Projeto técnico relacionado à área de mecânica, desenvolvido para demonstrar compreensão de sistemas mecânicos e aplicação prática de conceitos técnicos.",
-        techs: ["React", "Tailwind"],
+        techs: ["React", "Tailwind", "JavaScript"],
         ano: "2024/25",
-        image: "#"
+        image: image4
     }
 ]
 
@@ -54,7 +59,7 @@ function ProjectCard({ projectos }) {
                                     <img
                                         src={projecto.image}
                                         alt={`Screenshot do projeto ${projecto.titulo}`}
-                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-105"
                                         loading="lazy"
                                     />
                                 </article>
