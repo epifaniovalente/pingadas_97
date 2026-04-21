@@ -12,12 +12,12 @@ export function HeroSection() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full ring-1 ring-foreground/[0.08] bg-card/50 backdrop-blur-sm mb-6 sm:mb-8"
+                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full ring-1 ring-emerald-900 backdrop-blur-sm mb-6 sm:mb-8"
                 >
                     <span className="text-[11px] sm:text-xs font-mono tracking-wide uppercase flex items-center gap-2">
                         <span className="text-emerald-500 animate-pulse">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" class="size-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"></path>
                             </svg>
                         </span>
                         Disponível para projetos
