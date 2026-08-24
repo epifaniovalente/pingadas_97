@@ -1,0 +1,45 @@
+export const projects = [
+  {
+    n: "01",
+    title: "GestBI-Angola",
+    tag: "Agendamento de BI",
+    year: "2026",
+    desc: "Formulario de De validação do BI — Reduzindo o tempo de espera nas filas das lojas de registo.",
+    big: true,
+  },
+  {
+    n: "02",
+    title: "ByteShop",
+    tag: "E-commerce",
+    year: "2024",
+    desc: "Desenvolvida para praticar construção de layouts modernos, organização de produtos e experiência do usuário.",
+  },
+  {
+    n: "03",
+    title: "HelpDesk",
+    tag: "Institucional",
+    year: "2026",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat cupiditate maiores...",
+  },
+  {
+    n: "04",
+    title: "Emprega Angola",
+    tag: "Procura de Emprego",
+    year: "2026",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat cupiditate maiores.",
+  },
+  {
+    n: "05",
+    title: "Oficina AutoStar",
+    tag: "Landing Page informativc",
+    year: "2025",
+    desc: "Relacionado à área de mecânica, desenvolvido para demonstrar compreensão de sistemas mecânicos e aplicação prática de conceitos técnicos",
+  },
+  {
+    n: "06",
+    title: "SAF Consultoria",
+    tag: "Sistema de Consultorio",
+    year: "2026",
+    desc: "Lorem Nulla corrupti, dolor quaerat veniam  accusantium, fugiat eaque voluptate dolorum odio nihil provident.",
+  },
+];

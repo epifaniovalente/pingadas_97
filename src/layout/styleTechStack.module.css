@@ -1,0 +1,8 @@
+.techs {
+  background: url('../assets/techStack.jpg') no-repeat;
+  background-position: center right;
+  background-size: cover;
+  div{
+    background-color: rgba(7, 20, 20, 0.342);
+  }
+}

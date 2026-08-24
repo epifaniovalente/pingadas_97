@@ -9,6 +9,10 @@ export function Navbar() {
         { href: "#contacto", label: "Contacto" }
     ]
 
+    const navLinks =[
+        
+    ]
+
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
@@ -20,7 +24,7 @@ export function Navbar() {
         >
             <nav className="max-w-5xl mx-auto flex items-center justify-between px-4 py-2.5 rounded-2xl  backdrop-blur-xl ring-1 ring-gray-900 text-white">
                 <button className="text-sm font-semibold tracking-wide">
-                    dev<span className="text-blue-400">.</span>portifolio
+                    Dev<span className="text-blue-400">.</span>portifolio
                 </button>
 
                 <div className=" hidden sm:flex items-center gap-6 text-gray-400">

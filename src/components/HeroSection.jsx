@@ -1,12 +1,11 @@
 import { motion } from "framer-motion"
-import { FaArrowRight, FaDotCircle } from "react-icons/fa"
+import { FaArrowRight } from "react-icons/fa"
 
 export function HeroSection() {
     return (
         <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 text-gray-400">
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-blue-800/20 rounded-full blur-[120px] pointer-events-none">
-            </div>
+            
             <article className="relative max-w-3xl mx-auto text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 10 }}
