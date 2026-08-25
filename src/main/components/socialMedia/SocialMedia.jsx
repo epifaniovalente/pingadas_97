@@ -6,7 +6,7 @@ export const SocialMedia = () => {
     <ul className={`${style.example_2}`}>
       <li className={`${style.icon_content}`}>
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/epifanio-fernando-22a077316"
           aria-label="LinkedIn"
           data-social="linkedin"
         >
@@ -17,7 +17,7 @@ export const SocialMedia = () => {
       </li>
       <li className={`${style.icon_content}`}>
         <a
-          href="https://www.github.com/"
+          href="https://github.com/epifaniovalente"
           aria-label="GitHub"
           data-social="github"
         >
@@ -29,7 +29,7 @@ export const SocialMedia = () => {
       </li>
       <li className={`${style.icon_content}`}>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/epicoder_97/"
           aria-label="Instagram"
           data-social="instagram"
         >
@@ -43,7 +43,7 @@ export const SocialMedia = () => {
       </li>
       <li className={`${style.icon_content}`}>
         <a
-          href="https://youtube.com/"
+          href="https://youtube.com/pingadas97"
           aria-label="Youtube"
           data-social="youtube"
         >
