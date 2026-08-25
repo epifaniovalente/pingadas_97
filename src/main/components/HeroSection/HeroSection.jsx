@@ -40,14 +40,14 @@ export const HeroSection=()=>{
 
             <div className="mt-12 flex flex-wrap items-center gap-4">
               <button
-                onClick={() => scrollTo("servicos")}
+                
                 className="group inline-flex items-center gap-2 bg-[#0D0D0D] px-6 py-3.5 font-mono text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#FF3D00] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF3D00]"
               >
                 Técnico Médio
                 
               </button>
               <button
-                onClick={() => scrollTo("sobre")}
+                
                 className="inline-flex items-center gap-2 border-2 border-[#0D0D0D] px-6 py-3.5 font-mono text-sm font-bold uppercase tracking-wide transition-colors hover:border-[#FF3D00] hover:text-[#FF3D00] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF3D00]"
               >
                 Informático

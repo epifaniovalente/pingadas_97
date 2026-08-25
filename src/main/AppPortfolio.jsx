@@ -1,5 +1,4 @@
-
-import { HeroSection } from "./components/HeroSection/Herosection";
+import { HeroSection } from "./components/HeroSection/HeroSection";
 import { OqueFaco } from "./components/OqueFaco/OqueFaco";
 import { ProjectSection } from "./components/ProjectSection/ProjectSection";
 import { SobreMim } from "./components/AboutMe/SobreMim";
