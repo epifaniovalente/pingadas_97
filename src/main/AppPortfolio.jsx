@@ -15,8 +15,6 @@ import { Footer } from "./Footer/Footer";
 
 export default function AppPortfolio() {
   
-
-
   return (
     <main className="min-h-screen w-full bg-white text-[#0D0D0D] antialiased">
       <style>{`
